@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form>
+
+            <h2>New Call</h2>
+
+            <div class="input-group">
+                <label>Image URL</label>
+                <input id="image-url" required type="text" placeholder="https://example.com/photo.jpg">
+            </div>
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input required id="full-name" type="text" placeholder="Enter full name">
+            </div>
+
+            <div class="input-group">
+                <label>Home Town</label>
+                <input required id="home-town" type="text" placeholder="Enter home town">
+            </div>
+
+            <div class="input-group">
+                <label>Purpose</label>
+                <input required id="purpose" type="text" placeholder="e.g. Quick appointment note">
+            </div>
+
+                <div class="category">
+                    <h4>Category</h4>
+
+                    <label class="emergency">
+                        <input type="radio" name="category" value="Emergency">
+                        Emergency
+                    </label>
+
+                    <label class="important">
+                        <input type="radio" name="category" value="Important">
+                        Important
+                    </label>
+
+                    <label class="urgent">
+                        <input type="radio" name="category" value="Urgent">
+                        Urgent
+                    </label>
+
+                    <label class="norush">
+                        <input type="radio" name="category" value="No Rush">
+                        No Rush
+                    </label>
+                </div>
+
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <input
+                        id="phone"
+                        type="text"
+                        placeholder="Enter phone number"
+                    >
+                </div>
+            <!-- all inputs -->
+
+            <button id="create-btn" class="create-btn" type="submit">
+                Create Note
+            </button>
+
+            <button id="close-btn" class="close-btn" type="button">
+                Close
+            </button>
+
+
+
+        </form>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
